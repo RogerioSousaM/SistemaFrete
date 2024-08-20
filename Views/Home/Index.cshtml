@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial - Empresa de Frete";
+    
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Bem-vindo à Udi frete</h1>
+        <p class="lead">Conectando empresas e transportadoras para um transporte rápido e seguro.</p>
+        <hr class="my-4">
+        <p>Para continuar, faça login em sua conta.</p>
+    </div>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 text-center">
+            <p>Você é?</p>
+            <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Usuario" asp-action="Criar" role="button">Entregador</a>
+
+            <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Usuario" asp-action="Index" role="button">Administrador</a>
+        </div>
+    </div>
+</div>

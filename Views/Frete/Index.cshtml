@@ -1,0 +1,41 @@
+@model IEnumerable<ProvaPratica.Models.Frete>
+
+@{
+    ViewData["Title"] = "Lista de Fretes";
+}
+
+<h2>Lista de Fretes</h2>
+
+<p>
+    <a href="@Url.Action("Criar")" class="btn btn-primary">Criar Novo Frete</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Distância (km)</th>
+            <th>Veículo</th>
+            <th>Valor do Frete</th>
+            <th>Taxa</th>
+            <th>Valor Total</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Veiculo.TipoVeiculo</td>
+                <td>@item.Distancia</td>
+                <td>@item.ValorFrete</td>
+                <td>@item.TaxaFrete</td>
+                <td>@item.ValorTotal</td>
+                <td>
+                    <a href="@Url.Action("Editar", new { id = item.Id })" class="btn btn-warning">Editar</a>
+                    <a href="@Url.Action("Deletar", new { id = item.Id })" class="btn btn-danger">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

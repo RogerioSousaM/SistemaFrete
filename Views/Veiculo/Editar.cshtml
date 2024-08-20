@@ -1,0 +1,21 @@
+@model ProvaPratica.Models.Veiculo
+
+@{
+    ViewData["Title"] = "Editar Veículo";
+}
+
+<h2>Editar Veículo</h2>
+
+<form asp-action="Editar" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label>Tipo de Veículo</label>
+        <input type="text" name="TipoVeiculo" class="form-control" value="@Model.TipoVeiculo" />
+    </div>
+    <div class="form-group">
+        <label>Peso</label>
+        <input type="number" name="Peso" class="form-control" value="@Model.Peso" />
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Voltar</a>
+</form>

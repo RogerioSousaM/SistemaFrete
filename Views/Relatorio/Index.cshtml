@@ -1,0 +1,32 @@
+<h2>Relatórios</h2>
+
+<form asp-action="GerarRelatorio" method="post">
+    <button type="submit" class="btn btn-primary">Gerar Relatório de Entregas</button>
+</form>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Frete</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var relatorio in Model)
+            {
+                <tr>
+                    <td>@relatorio.Data</td>
+                    <td>@relatorio.Frete</td>
+                    <td>@relatorio.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhum relatório disponível.</p>
+}

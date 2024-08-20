@@ -1,0 +1,13 @@
+@model ProvaPratica.Models.Frete
+
+<h2>Alterar Status do Frete</h2>
+<form asp-action="AlterarStatus">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Status Atual:</label>
+        <select asp-for="Status" asp-items="Html.GetEnumSelectList<StatusFrete>()"></select>
+    </div>
+    <div>
+        <button type="submit">Alterar</button>
+    </div>
+</form>

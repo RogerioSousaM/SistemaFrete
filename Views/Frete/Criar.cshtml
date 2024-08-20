@@ -1,0 +1,38 @@
+@model ProvaPratica.Models.Frete
+
+@{
+    ViewData["Title"] = "Criar Frete";
+}
+
+<h2>Criar Frete</h2>
+
+<form asp-action="Criar" method="post">
+    <div class="form-group">
+        <label>Descrição</label>
+        <input type="text" name="Descricao" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Distância (km)</label>
+        <input type="number" name="Distancia" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Veículo</label>
+        <select name="VeiculoId" class="form-control">
+            @foreach (var veiculo in ViewBag.Veiculos)
+            {
+                <option value="@veiculo.Value">@veiculo.Text</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Usuário</label>
+        <select name="UsuarioId" class="form-control">
+            @foreach (var usuario in ViewBag.Usuarios)
+            {
+                <option value="@usuario.Value">@usuario.Text</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Voltar</a>
+</form>
