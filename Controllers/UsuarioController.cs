@@ -12,9 +12,12 @@ namespace ProvaPratica.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly FreteContext _context;
 
-        public UsuarioController(UserManager<IdentityUser> userManager, FreteContext context)
+        public SignInManager<IdentityUser> _signInManager { get; }
+
+        public UsuarioController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, FreteContext context)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
             _context = context;
         }
 
@@ -22,6 +25,10 @@ namespace ProvaPratica.Controllers
         {
             return View();
         }
+        public IActionResult Login()
+        {
+           return View();
+        } 
 
         public IActionResult Criar()
         {
@@ -132,7 +139,9 @@ namespace ProvaPratica.Controllers
                 {
                     return View(usuarioModel);
                 }
-                }
+            }
+             
+            
 
         private void MostrarMensagem(string Mostrar)
         {

@@ -1,9 +1,10 @@
+
+
 using Microsoft.AspNetCore.Mvc;
-using ProvaPratica.Context;
-using ProvaPratica.Models;
-using System.Linq;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using ProvaPratica.Context;
+using ProvaPratica.Models;
 
 namespace ProvaPratica.Controllers
 {
@@ -21,6 +22,7 @@ namespace ProvaPratica.Controllers
             var fretes = _context.Fretes.Include(f => f.Veiculo).Include(f => f.Usuario).ToList();
             return View(fretes);
         }
+        
 
         public IActionResult Criar()
         {
