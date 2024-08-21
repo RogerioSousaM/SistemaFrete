@@ -1,6 +1,15 @@
 @model ProvaPratica.Models.Login
 
 @{
+    var returnUrl = "";
+    ViewBag.Subtitulo = " Logar";
+    if(Context.Request.Query.ContainsKey("returnUrl"))
+    {
+        returnUrl = Context.Request.Query["returnUrl"].ToString();
+    }
+}
+
+@{
     ViewData["Title"] = "Logar";
 }
 
@@ -10,6 +19,7 @@
 
 <div class="row">
     <form action="Login" class="col-4 mb-3">
+        <input type="hidden" name="ReturnUrl" id="ReturnUrl" value="@returnUrl">
         <div class="form-group mb-3">
             <label asp-for="@Model.Usuario"></label><br>
             <input asp-for ="@Model.Usuario" class="form-control" autofocus autocomplete="off">

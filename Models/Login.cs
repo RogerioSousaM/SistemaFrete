@@ -21,5 +21,7 @@ namespace ProvaPratica.Models
         [Display(Name = "Lembrar de mim")]
         public bool Lembrar { get; set;}
 
+        public string ReturnURL { get; set;}
+
     }
 }
