@@ -26,8 +26,9 @@ namespace ProvaPratica.Models
         [Display(Name ="Confirmação de senha")]
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
-        [MaxLength(6, ErrorMessage = "O tamanho mínimo do campo {0} é de {1} caracteres.")]
-        [Compare(nameof(Senha), ErrorMessage = "A conirmação da senha não confere")]
+        [MaxLength(16, ErrorMessage = "O tamanho máximo do campo {0} é de {1} caracteres.")]
+        [MinLength(6, ErrorMessage = "O tamanho mínimo do campo {0} é de {1} caracteres.")]
+        [Compare(nameof(Senha), ErrorMessage = "As senhas não conferem")]
         public string ConfirmarSenha { get; set; }
 
         

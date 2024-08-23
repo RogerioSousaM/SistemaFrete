@@ -1,28 +1,28 @@
 using System;
-using System.Data.Common;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ProvaPratica.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuração do DbContext para usar SQL Server
 builder.Services.AddDbContext<FreteContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
+// Configuração do Identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-   .AddEntityFrameworkStores<FreteContext>()
-   .AddDefaultTokenProviders();
+    .AddEntityFrameworkStores<FreteContext>()
+    .AddDefaultTokenProviders();
 
-// Add services to the container.
+// Adicionar serviços ao contêiner
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuração do pipeline de solicitação HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -31,6 +31,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication(); 
 app.UseAuthorization();
 
 app.MapControllerRoute(

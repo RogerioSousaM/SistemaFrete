@@ -48,7 +48,7 @@ namespace ProvaPratica.Controllers
             return View(frete);
         }
 
-        private double CalcularFrete(double distancia, int peso)
+        private double CalcularFrete(double distancia, double peso)
         {
             return distancia * peso;
         }

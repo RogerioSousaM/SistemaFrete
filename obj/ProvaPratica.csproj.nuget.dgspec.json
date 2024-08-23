@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rmoreira\\Downloads\\SistemaFrete\\ProvaPratica.csproj": {}
+    "C:\\Users\\rmoreira\\Pictures\\SistemaFrete\\ProvaPratica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rmoreira\\Downloads\\SistemaFrete\\ProvaPratica.csproj": {
+    "C:\\Users\\rmoreira\\Pictures\\SistemaFrete\\ProvaPratica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rmoreira\\Downloads\\SistemaFrete\\ProvaPratica.csproj",
+        "projectUniqueName": "C:\\Users\\rmoreira\\Pictures\\SistemaFrete\\ProvaPratica.csproj",
         "projectName": "ProvaPratica",
-        "projectPath": "C:\\Users\\rmoreira\\Downloads\\SistemaFrete\\ProvaPratica.csproj",
+        "projectPath": "C:\\Users\\rmoreira\\Pictures\\SistemaFrete\\ProvaPratica.csproj",
         "packagesPath": "C:\\Users\\rmoreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rmoreira\\Downloads\\SistemaFrete\\obj\\",
+        "outputPath": "C:\\Users\\rmoreira\\Pictures\\SistemaFrete\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

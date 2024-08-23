@@ -47,7 +47,6 @@ namespace ProvaPratica.Controllers
             var veiculo = _context.Veiculos.Find(id);
             if (veiculo == null)
                 return NotFound();
-
             return View(veiculo);
         }
 

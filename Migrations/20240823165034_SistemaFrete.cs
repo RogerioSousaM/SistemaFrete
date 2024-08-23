@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProvaPratica.Migrations
 {
     /// <inheritdoc />
-    public partial class AdicionarSistemaFrete : Migration
+    public partial class SistemaFrete : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -58,7 +58,7 @@ namespace ProvaPratica.Migrations
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(16)", maxLength: 16, nullable: true),
-                    ConfirmarSenha = table.Column<string>(type: "nvarchar(6)", maxLength: 6, nullable: false)
+                    ConfirmarSenha = table.Column<string>(type: "nvarchar(16)", maxLength: 16, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -69,10 +69,9 @@ namespace ProvaPratica.Migrations
                 name: "Veiculos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     TipoVeiculo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Peso = table.Column<int>(type: "int", nullable: false)
+                    Peso = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -189,11 +188,9 @@ namespace ProvaPratica.Migrations
                 name: "Fretes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    VeiculoId = table.Column<int>(type: "int", nullable: false),
-                    UsuarioId = table.Column<int>(type: "int", nullable: false),
-                    UsuarioId1 = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    VeiculoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UsuarioId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Distancia = table.Column<double>(type: "float", nullable: false),
                     ValorFrete = table.Column<double>(type: "float", nullable: false),
                     TaxaFrete = table.Column<double>(type: "float", nullable: false),
@@ -204,10 +201,11 @@ namespace ProvaPratica.Migrations
                 {
                     table.PrimaryKey("PK_Fretes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Fretes_Usuarios_UsuarioId1",
-                        column: x => x.UsuarioId1,
+                        name: "FK_Fretes_Usuarios_UsuarioId",
+                        column: x => x.UsuarioId,
                         principalTable: "Usuarios",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Fretes_Veiculos_VeiculoId",
                         column: x => x.VeiculoId,
@@ -256,9 +254,9 @@ namespace ProvaPratica.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Fretes_UsuarioId1",
+                name: "IX_Fretes_UsuarioId",
                 table: "Fretes",
-                column: "UsuarioId1");
+                column: "UsuarioId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Fretes_VeiculoId",

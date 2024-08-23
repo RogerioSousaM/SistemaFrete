@@ -222,11 +222,8 @@ namespace ProvaPratica.Migrations
 
             modelBuilder.Entity("ProvaPratica.Models.Frete", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("Distancia")
                         .HasColumnType("float");
@@ -237,10 +234,8 @@ namespace ProvaPratica.Migrations
                     b.Property<double>("TaxaFrete")
                         .HasColumnType("float");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UsuarioId1")
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("ValorFrete")
@@ -249,12 +244,13 @@ namespace ProvaPratica.Migrations
                     b.Property<double>("ValorTotal")
                         .HasColumnType("float");
 
-                    b.Property<int>("VeiculoId")
-                        .HasColumnType("int");
+                    b.Property<string>("VeiculoId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UsuarioId1");
+                    b.HasIndex("UsuarioId");
 
                     b.HasIndex("VeiculoId");
 
@@ -268,8 +264,8 @@ namespace ProvaPratica.Migrations
 
                     b.Property<string>("ConfirmarSenha")
                         .IsRequired()
-                        .HasMaxLength(6)
-                        .HasColumnType("nvarchar(6)");
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -290,14 +286,11 @@ namespace ProvaPratica.Migrations
 
             modelBuilder.Entity("ProvaPratica.Models.Veiculo", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Peso")
-                        .HasColumnType("int");
+                    b.Property<double>("Peso")
+                        .HasColumnType("float");
 
                     b.Property<string>("TipoVeiculo")
                         .IsRequired()
@@ -363,7 +356,9 @@ namespace ProvaPratica.Migrations
                 {
                     b.HasOne("ProvaPratica.Models.Usuario", "Usuario")
                         .WithMany()
-                        .HasForeignKey("UsuarioId1");
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("ProvaPratica.Models.Veiculo", "Veiculo")
                         .WithMany()

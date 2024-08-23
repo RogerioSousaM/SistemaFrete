@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProvaPratica
 build_property.RootNamespace = ProvaPratica
-build_property.ProjectDir = C:\Users\rmoreira\Downloads\SistemaFrete\
+build_property.ProjectDir = C:\Users\rmoreira\Pictures\SistemaFrete\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rmoreira\Downloads\SistemaFrete
+build_property.MSBuildProjectDirectory = C:\Users\rmoreira\Pictures\SistemaFrete
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Frete/AlterarStatus.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Frete/AlterarStatus.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJldGVcQWx0ZXJhclN0YXR1cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Frete/Criar.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Frete/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJldGVcQ3JpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Frete/Editar.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Frete/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJldGVcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Frete/Index.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Frete/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJldGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Home/Index.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Home/Privacy.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Relatorio/Index.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Relatorio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Shared/Error.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Usuario/Criar.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Usuario/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Usuario/Editar.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Usuario/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Usuario/Index.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Usuario/Login.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Usuario/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Veiculo/Criar.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Veiculo/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb1xDcmlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Veiculo/Editar.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Veiculo/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Veiculo/Index.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Veiculo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/_ViewImports.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/_ViewStart.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rmoreira/Downloads/SistemaFrete/Views/Shared/_Layout.cshtml]
+[C:/Users/rmoreira/Pictures/SistemaFrete/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2yc4suy57q
