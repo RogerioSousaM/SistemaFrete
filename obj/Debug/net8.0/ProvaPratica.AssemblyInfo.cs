@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProvaPratica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbee5e865abc7c6dabefb1346872c1783603535e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+689927dc28d05b2e2e94f2620997aa05afe33a97")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProvaPratica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProvaPratica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

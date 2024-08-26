@@ -1,5 +1,4 @@
-using System;
-using Microsoft.AspNetCore.Identity;
+
 using Microsoft.EntityFrameworkCore;
 using ProvaPratica.Context;
 
@@ -8,11 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Configuração do DbContext para usar SQL Server
 builder.Services.AddDbContext<FreteContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
-
-// Configuração do Identity
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<FreteContext>()
-    .AddDefaultTokenProviders();
 
 // Adicionar serviços ao contêiner
 builder.Services.AddControllersWithViews();

@@ -1,12 +1,15 @@
 using System.ComponentModel.DataAnnotations;
-using ProvaPratica.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 
 namespace ProvaPratica.Models
 {  
     public class Usuario
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         
         [Display(Name = "Nome de Usuário")]
         [Required(ErrorMessage = "O nome é obrigatorio")]

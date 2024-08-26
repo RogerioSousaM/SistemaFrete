@@ -4,14 +4,14 @@ namespace ProvaPratica.Models
 {
     public class Frete
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        public string VeiculoId { get; set; }
+        public int VeiculoId { get; set; }
         public Veiculo Veiculo { get; set; }
 
         [Required]
-        public string UsuarioId { get; set; }
+        public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
 
         [Required]

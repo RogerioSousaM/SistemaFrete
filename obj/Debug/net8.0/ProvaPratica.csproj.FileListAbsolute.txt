@@ -581,9 +581,6 @@ C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\ProvaPratica.pdb
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Humanizer.dll
-C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -596,9 +593,6 @@ C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.EntityFramewo
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\rmoreira\Pictures\SistemaFrete\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll

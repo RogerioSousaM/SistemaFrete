@@ -5,7 +5,7 @@ namespace ProvaPratica.Models
 {
     public class Veiculo
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "O tipo do veículo é obrigatório")]
         public string TipoVeiculo { get; set; }

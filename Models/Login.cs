@@ -9,9 +9,9 @@ namespace ProvaPratica.Models
 {
     public class Login
     {
-        [Display(Name = "Usuário")]
+        [Display(Name = "Email")]
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatorio.")]
-        public string Usuario {get; set;}
+        public string Email {get; set;}
 
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatorio.")]
@@ -20,8 +20,6 @@ namespace ProvaPratica.Models
         [Required]
         [Display(Name = "Lembrar de mim")]
         public bool Lembrar { get; set;}
-
-        public string ReturnURL { get; set;}
 
     }
 }
