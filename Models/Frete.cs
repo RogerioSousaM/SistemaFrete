@@ -11,7 +11,7 @@ namespace ProvaPratica.Models
         public Veiculo Veiculo { get; set; }
 
         [Required]
-        public int UsuarioId { get; set; }
+        public string UsuarioId { get; set; }  // Alterado para string se a chave primária em Usuario for string
         public Usuario Usuario { get; set; }
 
         [Required]
@@ -22,5 +22,4 @@ namespace ProvaPratica.Models
         public double ValorTotal { get; set; }
         public StatusFrete Status { get; set; }
     }
-
-   }
+}

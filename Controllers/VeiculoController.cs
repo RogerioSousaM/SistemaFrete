@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ProvaPratica.Context;
 using ProvaPratica.Models;
-using System.Linq;
 
 namespace ProvaPratica.Controllers
 {

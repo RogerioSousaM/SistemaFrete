@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProvaPratica.Context;
 
@@ -11,9 +12,11 @@ using ProvaPratica.Context;
 namespace ProvaPratica.Migrations
 {
     [DbContext(typeof(FreteContext))]
-    partial class FreteContextModelSnapshot : ModelSnapshot
+    [Migration("20240827213631_SistemaFrete")]
+    partial class SistemaFrete
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

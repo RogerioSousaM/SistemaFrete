@@ -1,5 +1,12 @@
 @model ProvaPratica.Models.Login
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 @{
     var returnUrl = "";
     ViewBag.Subtitulo = " Logar";
@@ -42,11 +49,11 @@
         <div class="w-100"></div>
         <div class="mt-3">
             <a asp-action="Index" asp-controller="Home" class="btn btn-primary btn-lg">Voltar</a>
-            <button class="btn btn-primary btn-lg" type="submit">Entrar</button>
+            <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
         </div> 
     </form>
     <p>
-        Criar cadastro <a asp-action="Criar">Clique aqui</a> para se cadastrar.
+     <a asp-action="Criar">Clique aqui</a> para se cadastrar.
     </p>
 
 </div>
