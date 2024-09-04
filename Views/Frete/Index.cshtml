@@ -7,7 +7,7 @@
 <h2>Lista de Fretes</h2>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Adicionar Frete</a>
+    <a asp-action="Criar" class="btn btn-primary">Adicionar Frete</a>
 </p>
 
 <table class="table">
@@ -31,9 +31,9 @@
             <td>@Html.DisplayFor(modelItem => item.Distancia)</td>
             <td>@Html.DisplayFor(modelItem => item.ValorFrete)</td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+                <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Deletar" asp-route-id="@item.Id">Deletar</a>
             </td>
         </tr>
     }

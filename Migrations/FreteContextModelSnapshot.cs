@@ -212,6 +212,7 @@ namespace ProvaPratica.Migrations
                         .HasColumnType("nvarchar(16)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
